@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"ClientCertificate\"><param name=\"ios-package\" value=\"ClientCertificate\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.chinasofti.httpsdemo"
+        },
+        "cordova-plugin-clientcertificate": {
+            "PACKAGE_NAME": "com.chinasofti.httpsdemo"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-clientcertificate.clientCertificate",
+            "file": "plugins/cordova-plugin-clientcertificate/www/clientCertificate.js",
+            "pluginId": "cordova-plugin-clientcertificate",
+            "clobbers": [
+                "clientCertificate"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-plugin-clientcertificate": "0.0.1"
+    }
+}
